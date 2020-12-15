@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "d533771c-ca69-4a6a-a5d3-781c29085da7",
+		"name": "customer-jpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-cust-product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {  \"customer\" :{   \r\n        \r\n        \"name\": \"alok\",\r\n        \"email\": \"alok@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"products\": [\r\n            {\r\n               \r\n                \"productName\": \"prod5\",\r\n                \"qty\": 2,\r\n                \"price\": 2000\r\n            },\r\n            {\r\n                \r\n                \"productName\": \"prod7\",\r\n                \"qty\": 4,\r\n                \"price\": 2001\r\n            }\r\n        ]\r\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/placeOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"placeOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-cust-product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"customer\" :{   \r\n        \r\n        \"name\": \"Deepak\",\r\n        \"email\": \"Deepak@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"products\": [\r\n            {\r\n               \r\n                \"productName\": \"prod5upd\",\r\n                \"qty\": 993,\r\n                \"price\": 2000\r\n            },\r\n            {\r\n                \r\n                \"productName\": \"prod7upd\",\r\n                \"qty\": 994,\r\n                \"price\": 2001\r\n            }\r\n        ]\r\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/updateOrder/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"updateOrder",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-customer-product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {  \"customer\" :{   \r\n        \r\n        \"name\": \"alok\",\r\n        \"email\": \"alok@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"products\": [\r\n            {\r\n               \r\n                \"productName\": \"prod5\",\r\n                \"qty\": 2,\r\n                \"price\": 2000\r\n            },\r\n            {\r\n                \r\n                \"productName\": \"prod7\",\r\n                \"qty\": 4,\r\n                \"price\": 2001\r\n            }\r\n        ]\r\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/findAllOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"findAllOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-product-info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {  \"customer\" :{   \r\n        \r\n        \"name\": \"alok\",\r\n        \"email\": \"alok@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"products\": [\r\n            {\r\n               \r\n                \"productName\": \"prod5\",\r\n                \"qty\": 2,\r\n                \"price\": 2000\r\n            },\r\n            {\r\n                \r\n                \"productName\": \"prod7\",\r\n                \"qty\": 4,\r\n                \"price\": 2001\r\n            }\r\n        ]\r\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/getInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-customer-produc-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {  \"customer\" :{   \r\n        \r\n        \"name\": \"alok\",\r\n        \"email\": \"alok@gmail.com\",\r\n        \"gender\": \"male\",\r\n        \"products\": [\r\n            {\r\n               \r\n                \"productName\": \"prod5\",\r\n                \"qty\": 2,\r\n                \"price\": 2000\r\n            },\r\n            {\r\n                \r\n                \"productName\": \"prod7\",\r\n                \"qty\": 4,\r\n                \"price\": 2001\r\n            }\r\n        ]\r\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/getCustOrder?id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getCustOrder"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
