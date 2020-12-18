@@ -2,6 +2,7 @@ package com.javatechie.jpa.config;
 
 import com.javatechie.jpa.entity.AuditLog;
 import com.javatechie.jpa.repository.AuditRepository;
+import com.javatechie.jpa.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
