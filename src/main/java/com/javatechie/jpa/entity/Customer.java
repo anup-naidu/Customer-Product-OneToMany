@@ -18,7 +18,7 @@ import java.util.List;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
     private String name;
     private String email;
     private String gender;
@@ -26,11 +26,11 @@ public class Customer {
     @JoinColumn(name ="cp_fk",referencedColumnName = "id")
     private List<Product> products;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
