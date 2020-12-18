@@ -1,19 +1,15 @@
 package com.javatechie.jpa.repository;
 
 import com.javatechie.jpa.dto.ProductDto;
+import com.javatechie.jpa.entity.AuditLog;
 import com.javatechie.jpa.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface CustomerRepository extends JpaRepository<Customer,Integer> {
+public interface AuditRepository extends JpaRepository<AuditLog,Integer> {
 
-   @Query("SELECT new com.javatechie.jpa.dto.ProductDto(c.name , p.productName) FROM Customer c JOIN c.products p")
-    public List<ProductDto> getJoinInformation();
 
 }
-
-
-
 
